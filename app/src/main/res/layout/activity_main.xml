@@ -31,18 +31,21 @@
             android:id="@+id/rbDecimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/rb_decimal" />
 
         <RadioButton
             android:id="@+id/rbBinario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/rb_binario" />
 
         <RadioButton
             android:id="@+id/rbHexa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="@string/rb_hexadecimal" />
 
         <RadioButton
@@ -50,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="@string/rb_octal" />
 
     </RadioGroup>
@@ -73,7 +77,6 @@
         android:layout_marginTop="24dp"
         android:autofillHints="user"
         android:ems="10"
-        android:inputType="number"
         android:text="@string/caja_ingresar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIngresa" />
@@ -84,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="23dp"
+        android:onClick="checkSelecy"
         android:text="@string/cb_binario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cajaIngresar" />
@@ -94,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="20dp"
+        android:onClick="checkSelecy"
         android:text="@string/cb_hexadecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbBinario" />
@@ -104,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
         android:layout_marginTop="25dp"
+        android:onClick="checkSelecy"
         android:text="@string/cb_octal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbHexa" />
